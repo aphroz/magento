@@ -103,7 +103,7 @@
 	                <frontName>epay</frontName>
 	            </args>
 	        </epay>
-	    </routers>
+	    </routers>ro
 	    <translate>
 	        <modules>
 	            <Mage_Epay>
@@ -211,13 +211,13 @@
 
     <admin>
         <routers>
-			<epaycapture>
-                <use>admin</use>
+            <adminhtml>
                 <args>
-                    <module>Mage_Epay</module>
-                    <frontname>deleteordermassaction</frontname>
+                    <modules>
+                        <Mage_Epay after="Mage_Adminhtml">Mage_Epay_Adminhtml</Mage_Epay>
+                    </modules>
                 </args>
-            </epaycapture>
+            </adminhtml>
         </routers>
     </admin>
 	
